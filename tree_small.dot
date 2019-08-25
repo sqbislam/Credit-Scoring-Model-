@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Term_Short Term <= 0.5\nfriedman_mse = 645.891\nsamples = 25195\nvalue = 716.377", fillcolor="#ea9b62"] ;
+1 [label="Maximum Open Credit <= 816695.0\nfriedman_mse = 938.523\nsamples = 6943\nvalue = 699.159", fillcolor="#eda877"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Annual Income <= 1377927.5\nfriedman_mse = 967.321\nsamples = 4885\nvalue = 696.55", fillcolor="#eeaa7a"] ;
+1 -> 2 ;
+3 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 3 ;
+778 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 778 ;
+1149 [label="Monthly Debt <= 22366.609\nfriedman_mse = 813.593\nsamples = 2058\nvalue = 705.43", fillcolor="#eca46f"] ;
+1 -> 1149 ;
+1150 [label="(...)", fillcolor="#C0C0C0"] ;
+1149 -> 1150 ;
+1423 [label="(...)", fillcolor="#C0C0C0"] ;
+1149 -> 1423 ;
+1894 [label="Maximum Open Credit <= 583649.0\nfriedman_mse = 376.128\nsamples = 18252\nvalue = 722.985", fillcolor="#e9965a"] ;
+0 -> 1894 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+1895 [label="Purpose_Debt Consolidation <= 0.5\nfriedman_mse = 368.405\nsamples = 11904\nvalue = 720.427", fillcolor="#ea985d"] ;
+1894 -> 1895 ;
+1896 [label="(...)", fillcolor="#C0C0C0"] ;
+1895 -> 1896 ;
+2459 [label="(...)", fillcolor="#C0C0C0"] ;
+1895 -> 2459 ;
+3692 [label="log_Current Credit Balance <= 12.526\nfriedman_mse = 354.896\nsamples = 6348\nvalue = 727.83", fillcolor="#e99355"] ;
+1894 -> 3692 ;
+3693 [label="(...)", fillcolor="#C0C0C0"] ;
+3692 -> 3693 ;
+4174 [label="(...)", fillcolor="#C0C0C0"] ;
+3692 -> 4174 ;
+}

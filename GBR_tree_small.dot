@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Term_Long Term <= 0.5\nfriedman_mse = 207.444\nsamples = 40000\nvalue = 1.476", fillcolor="#ea985e"] ;
+1 [label="log_Maximum Open Credit <= 13.018\nfriedman_mse = 179.374\nsamples = 28894\nvalue = 4.348", fillcolor="#e9965a"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Years of Credit History <= 9.25\nfriedman_mse = 189.982\nsamples = 15025\nvalue = 2.519", fillcolor="#ea975c"] ;
+1 -> 2 ;
+3 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 3 ;
+398 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 398 ;
+1819 [label="Annual Income <= 1378288.5\nfriedman_mse = 160.33\nsamples = 13869\nvalue = 6.33", fillcolor="#e99457"] ;
+1 -> 1819 ;
+1820 [label="(...)", fillcolor="#C0C0C0"] ;
+1819 -> 1820 ;
+2975 [label="(...)", fillcolor="#C0C0C0"] ;
+1819 -> 2975 ;
+4010 [label="Maximum Open Credit <= 785609.0\nfriedman_mse = 203.151\nsamples = 11106\nvalue = -5.998", fillcolor="#eb9f68"] ;
+0 -> 4010 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+4011 [label="Annual Income <= 1377927.5\nfriedman_mse = 203.355\nsamples = 7605\nvalue = -7.002", fillcolor="#eba06a"] ;
+4010 -> 4011 ;
+4012 [label="(...)", fillcolor="#C0C0C0"] ;
+4011 -> 4012 ;
+4911 [label="(...)", fillcolor="#C0C0C0"] ;
+4011 -> 4911 ;
+5432 [label="log_Current Credit Balance <= 12.944\nfriedman_mse = 195.76\nsamples = 3501\nvalue = -3.816", fillcolor="#eb9d65"] ;
+4010 -> 5432 ;
+5433 [label="(...)", fillcolor="#C0C0C0"] ;
+5432 -> 5433 ;
+5844 [label="(...)", fillcolor="#C0C0C0"] ;
+5432 -> 5844 ;
+}
